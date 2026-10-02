@@ -1,0 +1,25 @@
+chhap("====================================")
+chhap("       NUMBER GUESSING GAME")
+chhap("====================================")
+
+maano secret = 7
+maano attempts = 0
+
+jabtak sahi {
+    maano guess = number_dalao("Guess the number (1-10): ")
+    attempts += 1
+
+    agar guess == secret {
+        chhap("")
+        chhap("🎉 Correct!")
+        chhap("You guessed it in", attempts, "attempts.")
+        roko
+    } nahito_agar guess < secret {
+        chhap("Too low! Try again.")
+    } nahito {
+        chhap("Too high! Try again.")
+    }
+}
+
+chhap("")
+chhap("Thanks for playing!")
