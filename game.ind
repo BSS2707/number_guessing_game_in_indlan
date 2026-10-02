@@ -2,7 +2,7 @@ chhap("====================================")
 chhap("       NUMBER GUESSING GAME")
 chhap("====================================")
 
-maano secret = random(1, 10)
+maano secret = number_dalao("Set the secret number (1-10): ")
 maano attempts = 0
 
 jabtak sahi {
